@@ -1,0 +1,130 @@
+:root {
+  --cuprum: 'Cuprum', sans-serif;
+  --garamond: 'EB Garamond', serif;
+  --corinthia: 'Corinthia', cursive;
+  --dancing-script: 'Dancing Script', cursive;
+  --great-vibes: 'Great Vibes', cursive;
+  --klee-one: 'Klee One', cursive;
+  --shadow-into-light: 'Shadows Into Light', cursive;
+  --qwigley: 'Qwigley', cursive;
+  /* colors */
+  --green: hsl(167deg 44% 48%);
+  --light-green: hsl(164deg 22% 90%);
+  --dark-light-green: hsl(163deg 27% 82%);
+  --very-dark-green: hsl(168deg 45% 23%);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul li,
+ol li {
+  list-style: none;
+  font-family: var(--cuprum);
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+html, body {
+  width: 100vw;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--light-green)
+}
+
+.logo img {
+  width: 65px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nav-list, .logo {
+  display: flex;
+  margin-right: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 auto;
+  width: 50%;
+}
+
+.nav-list a {
+  display: block;
+  padding: 2rem 1rem;
+  text-decoration: none;
+  font-size: clamp(1rem, 4vw, 1.31875rem);
+}
+
+a.first-link {
+  color: var(--very-dark-green);
+}
+
+a.second-link, a.third-link {
+  color: var(--green);
+}
+
+a.second-link:hover, a.third-link:hover {
+  color: var(--very-dark-green);
+}
+
+.welcome-section {
+  margin-top: 88px;
+  background: var(--light-green);
+}
+
+.title {
+  color: rgba(62, 156, 135, 1);
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+.title h1 {
+  font-family: var(--corinthia);
+  font-size: clamp(4.5rem, 5vw, 6.5rem);
+  font-weight: 500;
+}
+
+.title p {
+  font-family: var(--klee-one);
+}
+
+#earth-holder img {
+  margin: 0 auto;
+}
